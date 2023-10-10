@@ -1,7 +1,10 @@
 package br.com.rbpolim.todolist.user;
 
+import lombok.Data; // Importa a biblioteca Lombok
+
+@Data // Cria automaticamente os getters e setters para os atributos da classe
 public class UserModel {
-  public String username;
-  public String name;
-  public String password;
+  private String username;
+  private String name;
+  private String password;
 }
