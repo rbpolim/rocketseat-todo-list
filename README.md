@@ -114,8 +114,15 @@
 #### Cadastrar de Tarefas (tasks)
 
   - Criamos o metodo POST para cadastrar uma tarefa
-  - Criamos o metodo GET para listar todas as tarefas
-  - Criamos o metodo GET para listar uma tarefa pelo id
-  - Criamos o metodo PUT para atualizar uma tarefa
-  - Criamos o metodo DELETE para deletar uma tarefa
-  ![image-7](image-7.png)
+  ![Alt text](image-7.png)
+
+#### Filtro
+
+  - Adicionando validação para criar uma tarefa
+  - Conceito de filtro e Autenticacao (Basic Auth)
+  - Crio uma pasta (filter) e arquivo (FilterTaskAuth)
+  - Esse arquivo sera um middleware que ira interceptar as requisicoes e verificar se o usuario esta autenticado ou nao
+  - Adicionamos a anotacao @Component para que o Spring entenda que essa classe sera um componente gerenciavel por ele
+
+  - No Insomnia, adicionamos o username e password no campo Authorization
+  ![Alt text](image-8.png)
