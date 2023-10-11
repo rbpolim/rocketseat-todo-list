@@ -53,8 +53,8 @@
 
   - Apos rodar o servidor e acessar a URL (http://localhost:8080/h2-console)
   - deve-se configurar o campo JDBC URL com o valor jdbc:h2:mem:todolist e clicar em Connect. 
-  ![image](https://github.com/rbpolim/supply-marine/assets/66570560/030237cb-fb73-4741-9d38-92a1161667f6)
-  ![image](https://github.com/rbpolim/supply-marine/assets/66570560/3f4b3841-5b7f-4c86-a730-7f1e19179dc4)
+  ![imgs/image](https://github.com/rbpolim/supply-marine/assets/66570560/030237cb-fb73-4741-9d38-92a1161667f6)
+  ![imgs/image](https://github.com/rbpolim/supply-marine/assets/66570560/3f4b3841-5b7f-4c86-a730-7f1e19179dc4)
 
 #### Tabela Usuario
 
@@ -63,7 +63,7 @@
   - Adicionamos a anotacao @Id na propriedade id
   - Adicionamos a anotacao @GeneratedValue na propriedade id
 
-  ![Alt text](image-2.png)
+  ![Alt text](imgs/image-2.png)
 
 #### Repositório Usuário
 
@@ -73,9 +73,9 @@
   - No arquivo UserController foi injetado o IUserRepository;
   - E no método HTTP post foi adicionado o método save do IUserRepository;
   - Testado a criacao de um usuario no banco de dados;
-  ![user-created-by-insomnia](image-3.png)
+  ![user-created-by-insomnia](imgs/image-3.png)
   - Resultado do teste no banco de dados:
-  ![user-created-h2database](image-4.png)
+  ![user-created-h2database](imgs/image-4.png)
 
 #### Validar Usuário
 
@@ -94,7 +94,7 @@
 
   - No UserController, injetamos o IUserRepository e adicionamos o metodo findByUsername;
   - Criamos uma validaçao para verificar se o usuário ja existe no banco de dados;
-  ![validate-user-controller](image-5.png)
+  ![validate-user-controller](imgs/image-5.png)
 
 
 ## Aula 3
@@ -109,12 +109,12 @@
 
   - Começo criando o arquivo de modelo Task (TaskModel)
   - Adicionamos as propriedades da tabela Task
-  ![tabala-tasks-criada](image-6.png)
+  ![tabala-tasks-criada](imgs/image-6.png)
 
 #### Cadastrar de Tarefas (tasks)
 
   - Criamos o metodo POST para cadastrar uma tarefa
-  ![Alt text](image-7.png)
+  ![Alt text](imgs/image-7.png)
 
 #### Filtro
 
@@ -124,4 +124,4 @@
   - Esse arquivo sera um middleware que ira interceptar as requisicoes e verificar se o usuario esta autenticado ou nao;
   - Adicionamos a anotacao @Component para que o Spring entenda que essa classe sera um componente gerenciavel por ele;
   - No Insomnia, adicionamos o username e password no campo Authorization
-  ![Alt text](image-8.png)
+  ![Alt text](imgs/imgs/image-8.png)
