@@ -118,11 +118,10 @@
 
 #### Filtro
 
-  - Adicionando validação para criar uma tarefa
-  - Conceito de filtro e Autenticacao (Basic Auth)
-  - Crio uma pasta (filter) e arquivo (FilterTaskAuth)
-  - Esse arquivo sera um middleware que ira interceptar as requisicoes e verificar se o usuario esta autenticado ou nao
-  - Adicionamos a anotacao @Component para que o Spring entenda que essa classe sera um componente gerenciavel por ele
-
+  - Adicionando validação para criar uma tarefa;
+  - Conceito de filtro e Autenticacao (Basic Auth);
+  - Crio uma pasta (filter) e arquivo (FilterTaskAuth);
+  - Esse arquivo sera um middleware que ira interceptar as requisicoes e verificar se o usuario esta autenticado ou nao;
+  - Adicionamos a anotacao @Component para que o Spring entenda que essa classe sera um componente gerenciavel por ele;
   - No Insomnia, adicionamos o username e password no campo Authorization
   ![Alt text](image-8.png)
