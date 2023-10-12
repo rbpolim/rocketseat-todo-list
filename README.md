@@ -124,4 +124,46 @@
   - Esse arquivo sera um middleware que ira interceptar as requisicoes e verificar se o usuario esta autenticado ou nao;
   - Adicionamos a anotacao @Component para que o Spring entenda que essa classe sera um componente gerenciavel por ele;
   - No Insomnia, adicionamos o username e password no campo Authorization
-  ![Alt text](imgs/imgs/image-8.png)
+  ![Alt text](imgs/image-8.png)
+
+## Aula 4
+
+#### Validando Rotas
+
+  - Dentro do arquivo Filter, pegamos o servletPath da requisicao
+  - Criamos uma condicao com a rota `/tasks/` e adicionamos a logica de validacao
+  
+  ```
+  var servletPath = request.getServletPath();
+  ```
+
+#### Atributo Request
+
+  - Adicionamos o atributo request no metodo de validacao de usuario
+  ```
+  request.setAttribute("idUser", user.getId());
+  ```
+  - Capturamos o atributo request no metodo de criacao de tarefa
+  - Setamos o atributo idUser na criacao de tarefa
+  ```
+
+#### Validacao Horas
+
+  - Pegamos a data atual e adicionamos as logicas de validacao
+
+#### Listas de Tarefas
+
+  - Pegar a lista de tarefas do usuario logado
+  - Criamos um metodo no ITaskRepository para buscar as tarefas pelo id do usuario
+  - Criamos um metodo no TaskController para buscar as tarefas pelo id do usuario
+
+#### Update da Tarefa
+
+  - Alterado no Filter o metodo para `startWith()`
+  - Criado metodo no TaskController para atualizar uma tarefa
+
+#### Update Parcial da Tarefa
+
+  - Criamos um novo package Utils
+  - Criamos um metodo que gerenciar o update parcial da tarefa
+  - Dentro do endpoint update nos usamos o metodo do Utils criado
