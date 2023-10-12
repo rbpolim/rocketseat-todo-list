@@ -141,23 +141,22 @@ A TODO List project developed during the Semana Java event, a week-long Java pro
 
 #### Atributo Request
 
-  - Adicionamos o atributo request no metodo de validacao de usuario
+  - Adicionamos o atributo `request` no metodo de Validação de usuário
   ```
   request.setAttribute("idUser", user.getId());
   ```
-  - Capturamos o atributo request no metodo de criacao de tarefa
-  - Setamos o atributo idUser na criacao de tarefa
-  ```
+  - Capturamos o atributo request no metodo de criação de tarefa
+  - Por fim, setamos o atributo idUser na criação de tarefa
 
-#### Validacao Horas
+  #### Validação Horas
 
-  - Pegamos a data atual e adicionamos as logicas de validacao
+  - Pegamos a data atual e adicionamos as logicas de Validação
 
 #### Listas de Tarefas
 
-  - Pegar a lista de tarefas do usuario logado
-  - Criamos um metodo no ITaskRepository para buscar as tarefas pelo id do usuario
-  - Criamos um metodo no TaskController para buscar as tarefas pelo id do usuario
+  - Pegar a lista de tarefas do usuário logado
+  - Criamos um metodo no ITaskRepository para buscar as tarefas pelo id do usuário
+  - Criamos um metodo no TaskController para buscar as tarefas pelo id do usuário
 
 #### Update da Tarefa
 
