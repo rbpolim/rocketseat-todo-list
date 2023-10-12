@@ -1,5 +1,7 @@
 # Semana Java Rocketseat
 
+A TODO List project developed during the Semana Java event, a week-long Java programming workshop that brought together enthusiastic developers to explore and enhance their Java programming skills.
+
 ## Techs
 
 - Java
